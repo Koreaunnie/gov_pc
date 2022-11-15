@@ -1,0 +1,383 @@
+﻿<!doctype html>
+<html lang="ko">
+
+ <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+		<title>국회의원 이해충돌방지시스템</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/gov_pc.css">
+		<link rel="stylesheet" href="css/slick.css">
+		
+		<script src="js/jquery-1.11.2.min.js"></script> 
+		<script src="js/slick.min.js"></script>
+		<script src="js/gov_pc.js"></script> 
+		
+ </head>
+ 
+ <body>
+	<header>  
+		<div id="gnb_top">
+			<ul id="left_gnb">
+				<li><a href="https://www.assembly.go.kr">국회 홈페이지</a></li>
+				<li><a href="http://docs.assembly.go.kr">전자정보시스템</a></li>
+			</ul>
+
+			<ul id="right_gnb">
+				<li><a href="#">홈</a></li>
+				<li><a href="">로그인</a></li>
+				<li>
+					<a href="javascript:fontSz('standard')">글자크기</a>
+					<span class="font_btn"><a href="">+</a></span>
+					<span class="font_btn"><a href="">-</a></span>
+				</li>
+				<li><a href="">마이페이지</a></li>
+			</ul>
+		</div>
+
+		<nav id="gnb_pc">
+			<h1 id="logo"><a href=""><img src="img/logo_main.png" alt="로고"></a></h1>
+
+		 	<ul class="gnb_wrap">
+				<li><a href="">이해충돌방지 제도 안내</a>
+					<ul class="sub">
+						<li><a href="">이해충돌방지 제도 안내</a></li>
+					</ul>
+		  		</li>
+
+		  		<li><a href="">사적 이해관계의 등록 / 변경 등록</a>
+					<ul class="sub">
+						<li><a href="">사적 이해관계의 등록</a></li>
+						<li><a href="">사적 이해관계의 변경 등록</a></li>
+					</ul>
+				</li>
+
+		 		<li><a href="">이해충돌의 신고</a>
+					<ul class="sub">
+						<li><a href="">이해충돌의 신고</a></li>
+						<li><a href="">직무관련자와의 거래 신고</a></li>
+						<li><a href="">퇴직자 사적 접촉 신고</a></li>
+					</ul>
+		 		</li>
+
+		 		<li><a href="">자료실</a>
+					<ul class="sub">
+						<li><a href="">공지사항</a></li>
+						<li><a href="">자료실</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul>
+		 		</li>		
+		 	</ul>
+
+			<div id="sub_bg"></div>
+		</nav>
+
+		
+		<nav id="gnb_mobile">
+		 <h1 id="logo_mobile"><a href=""><img src="img/logo_main.png" alt="로고"></a></h1>
+		 <button id="hammenu"><img src="img/ham_btn.png" alt="메뉴"></button>
+		
+		 <ul class="gnb_wrap">
+			<li><a href="">이해충돌방지 제도 안내</a>
+				<ul class="sub">
+					<li><a href="">이해충돌방지 제도 안내</a></li>
+				</ul>
+			</li>
+
+			<li><a href="">사적 이해관계의 등록 / 변경 등록</a>
+				<ul class="sub">
+					<li><a href="">사적 이해관계의 등록</a></li>
+					<li><a href="">사적 이해관계의 변경 등록</a></li>
+				</ul>
+			</li>
+
+			<li><a href="">이해충돌의 신고</a>
+				<ul class="sub">
+					<li><a href="">이해충돌의 신고</a></li>
+					<li><a href="">직무관련자와의 거래 신고</a></li>
+					<li><a href="">퇴직자 사적 접촉 신고</a></li>
+				</ul>
+			</li>
+
+			<li><a href="">자료실</a>
+				<ul class="sub">
+					<li><a href="">공지사항</a></li>
+					<li><a href="">자료실</a></li>
+					<li><a href="">FAQ</a></li>
+				</ul>
+			</li>
+		 </ul>
+		</nav>
+	</header>
+
+	<div id="quick_menu">
+		<ul>
+			<li><a href=""><img src="img/quick_icon01.png" alt="사적 이해관계의 등록 아이콘">사적 이해관계의<br>등록</a></li>
+			<li><a href=""><img src="img/quick_icon02.png" alt="사적 이해관계의 변경등록 아이콘">사적 이해관계의<br>변경등록</a></li>
+			<li><a href=""><img src="img/quick_icon03.png" alt="이해충돌의 신고 아이콘">이해충돌의<br>신고</a></li>
+			<li><a href=""><img src="img/quick_icon04.png" alt="직무관련자와의 거래 신고 아이콘">직무관련자와의<br>거래 신고</a></li>
+			<li><a href=""><img src="img/quick_icon05.png" alt="퇴직자 사적 접촉 신고 아이콘">퇴직자<br>사적 접촉 신고</a></li>
+			<li><a href=""><img src="img/quick_icon06.png" alt="마이페이지 아이콘">마이페이지</a></li>
+			<li><a href=""><img src="img/quick_icon07.png" alt="자료실 아이콘">자료실</a></li>
+			<li id="top_btn"><a href="">TOP</a></li>
+		</ul>
+	</div>
+
+	<section id="banner_pc">
+		<div id="left_wrap">
+			<div id="banner_text">
+				<p><span class="bold">국회의원 이해충돌방지시스템</span>은</p>
+				<p>국회의원의 이해충돌 관련 사항을 효율적으로 등록·신고할 수 있도록 지원하는 시스템입니다.</p>
+			</div>
+
+			<div id="tile_btn">
+				<div id="ghb" class="btn_box">
+					<div class="tile_title">
+						<p><span class="bold">국회법</span>상</br>등록·신고</p>
+						<p><small>윤리심사자문위원회</small></p>
+					</div>
+
+					<ul class="btn_wrap">
+						<li><a href=""><img src="img/tile_icon01.png" alt="사적이해관계 등록신고 아이콘">사적 이해관계의<br>등록</a></li>
+						<li><a href=""><img src="img//tile_icon02.png" alt="사적이해관계 변경신고 아이콘">사적 이해관계의<br>변경등록</a></li>
+						<li><a href=""><img src="img//tile_icon03.png" alt="이해충돌 회피신청 아이콘">이해충돌의<br>신고</a></li>
+					</ul>
+				</div>
+
+				<div id="ehcd" class="btn_box">
+					<div class="tile_title">
+						<p><span class="bold">이해충돌방지법</span>상</br>신고</p>
+						<p><small>국회의장</small></p>
+					</div>
+
+					<ul class="btn_wrap">
+						<li><a href=""><img src="img//tile_icon04.png" alt="직무관련자와의 거래신고 아이콘">직무관련자와의<br>거래 신고</a></li>
+						<li><a href=""><img src="img//tile_icon05.png" alt="퇴직자 사적접촉신고 아이콘">퇴직자<br>사적 접촉 신고</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="right_wrap">
+			<div id="slide_wrap">
+				<div id="slide_banner">
+					<div class="poster0"><a href="#"><img src="img/slide01.jpg" alt="배너 이미지1"></a></div>
+					<div class="poster1"><a href="#"><img src="img/slide02.jpg" alt="배너 이미지2"></a></div>
+					<div class="poster2"><a href="#"><img src="img/slide03.jpg" alt="배너 이미지3"></a></div>
+					<div class="poster3"><a href="#"><img src="img/slide04.jpg" alt="배너 이미지4"></a></div>
+				</div>
+
+				<div class="slick-prev"></div>
+				<div class="slick-next"></div>
+
+			</div>			
+		</div>
+	</section>
+
+
+	<section id="banner_mobile">
+		<div id="banner_wrap_mobile">
+			<div id="slide_wrap_mobile">
+				<div id="slide_banner_mobile">
+					<div class="poster0"><a href="#"><img src="img/slide01.jpg" alt="배너 이미지1"></a></div>
+					<div class="poster1"><a href="#"><img src="img/slide02.jpg" alt="배너 이미지2"></a></div>
+					<div class="poster2"><a href="#"><img src="img/slide03.jpg" alt="배너 이미지3"></a></div>
+					<div class="poster3"><a href="#"><img src="img/slide04.jpg" alt="배너 이미지4"></a></div>
+				</div>
+	
+				<div class="slick-prev"></div>
+				<div class="slick-next"></div>
+			</div>			
+
+			<div id="banner_text">
+				<p><span class="bold">국회의원 이해충돌방지시스템</span>은</p>
+				<p>국회의원의 이해충돌 관련 사항을 효율적으로 등록·신고할 수 있도록 지원하는 시스템입니다.</p>
+			</div>
+
+			<div id="tile_btn">
+				<div id="ghb" class="btn_box">
+					<div class="tile_title">
+						<p><span class="bold">국회법</span>상</br>등록·신고</p>
+						<small>윤리심사자문위원회</small>
+					</div>
+
+					<ul class="btn_wrap">
+						<li><a href=""><img src="img/tile_icon01.png" alt="사적이해관계 등록신고 아이콘">사적 이해관계의<br>등록</a></li>
+						<li><a href=""><img src="img//tile_icon02.png" alt="사적이해관계 변경신고 아이콘">사적 이해관계의<br>변경등록</a></li>
+						<li><a href=""><img src="img//tile_icon03.png" alt="이해충돌 회피신청 아이콘">이해충돌의<br>신고</a></li>
+					</ul>
+				</div>
+
+				<div id="ehcd" class="btn_box">
+					<div class="tile_title">
+						<p><span class="bold">이해충돌방지법</span>상</br>신고</p>
+						<small>국회의장</small>
+					</div>
+
+					<ul class="btn_wrap">
+						<li><a href=""><img src="img//tile_icon04.png" alt="직무관련자와의 거래신고 아이콘">직무관련자와의<br>거래 신고</a></li>
+						<li><a href=""><img src="img//tile_icon05.png" alt="퇴직자 사적접촉신고 아이콘">퇴직자<br>사적 접촉 신고</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="info">
+		<div id="notice" class="info_box">
+			<h2><a href="">공지사항</a></h2>
+			<span class="more_btn"><a href="">+ 더보기</a></span>
+
+			<div class="text_wrap">
+				<ul>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							이해충돌 신고 방법 안내
+							<span class="date">2022.03.01</span>
+						</a>
+					</li>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							사적이해관계등록 절차 및 등록기한 안내
+							<span class="date">2022.02.28</span>
+						</a>
+					</li>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							서비스 점검 안내
+							<span class="date">2022.02.15</span>
+						</a>
+					</li>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							설 명절 연휴 고객센터 안내 시간 공지
+							<span class="date">2022.02.09</span>
+						</a>
+					</li>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							홈페이지 개편 안내
+							<span class="date">2022.01.01</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="reference" class="info_box">
+			<h2><a href="">자료실</a></h2>
+			<span class="more_btn"><a href="">+ 더보기</a></span>
+
+			<div class="text_wrap">
+				<ul>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							이해충돌 신고 방법 안내
+							<span class="date">2022.03.01</span>
+						</a>
+					</li>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							사적이해관계등록 절차 및 등록기한 안내
+							<span class="date">2022.02.28</span>
+						</a>
+					</li>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							서비스 점검 안내
+							<span class="date">2022.02.15</span>
+						</a>
+					</li>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							설 명절 연휴 고객센터 안내 시간 공지
+							<span class="date">2022.02.09</span>
+						</a>
+					</li>
+					<li>
+						<span class="list_icon"><img src="img/list_dot.png" alt="리스트 아이콘"></span>
+						<a href="">
+							홈페이지 개편 안내
+							<span class="date">2022.01.01</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="faq">
+		<div id="faq_wrap">
+			<div id="faq_bg"></div>
+
+			<div class="faq_title_box">
+				<h2><a href="">FAQ</a></h2>
+				<span class="more_btn"><a href="">+ 더보기</a></span>
+			</div>
+
+			<ul id="faq_list">
+				<li>
+					<a href="">
+						기존에 신고했던 내역을 수정하거나 철회할 수 있나요?
+						<span class="more_btn">+ 더보기</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						같은 동네에 사는 이웃주민과의 접촉이 있는 경우에도 신고를 해야하나요?
+						<span class="more_btn">+ 더보기</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						공직자의 가족에게도 이해충돌방지법이 적용되나요?
+						<span class="more_btn">+ 더보기</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						퇴직한지 5년 이상 된 경우에도 이해충돌방지법 적용 대상인가요?
+						<span class="more_btn">+ 더보기</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<footer>
+		<div id="footer_wrap">
+			<h1 id="footer_logo"><a href=""><img src="img/logo_footer.png" alt="로고"></a></h1>
+			<ul>
+				<li>서울특별시 영등포구 의사당대로 1(여의도동) 07233</li>
+				<li>|</li>
+				<li>TEL 02-6788-3844</li>
+			</ul>
+			<small>Copyright © 대한민국국회. All rights reserved.</small>
+
+			<div id="link_wrap">
+				<select name="관련사이트 바로가기" title="관련사이트 바로가기">
+					<option value="">관련사이트 바로가기</option>
+					<option value=""><a href="https://www.assembly.go.kr">대한민국 국회</a></option>
+					<option value=""><a href="https://open.assembly.go.kr">열린국회정보</a></option>
+					<option value=""><a href="https://committee.na.go.kr:444/portal/index.do">위원회</a></option>
+					<option value=""><a href="http://nrm.assembly.go.kr/">국회의원정보시스템</a></option>
+					<option value=""><a href="http://docs.assembly.go.kr">전자문서시스템</a></option>
+				</select>
+			</div>
+		</div>
+	</footer>
+ </body>
+ 
+</html>
