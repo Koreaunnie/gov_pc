@@ -1,0 +1,928 @@
+﻿<!doctype html>
+<html lang="ko">
+
+ <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+		<title>국회의원 이해충돌방지시스템 > 이해충돌방지 제도 안내</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/system.css">
+
+		<script src="js/jquery-1.11.2.min.js"></script> 
+		<script src="js/slick.min.js"></script>
+		<script src="js/gov_pc.js"></script> 
+		
+ </head>
+ 
+ <body>
+	<header>  
+		<div id="gnb_top">
+			<ul id="left_gnb">
+				<li><a href="https://www.assembly.go.kr">국회 홈페이지</a></li>
+				<li><a href="http://docs.assembly.go.kr">전자정보시스템</a></li>
+			</ul>
+
+			<ul id="right_gnb">
+				<li><a href="index.html">홈</a></li>
+				<li><a href="">로그인</a></li>
+				<li>
+					<a href="javascript:fontSz('standard')">글자크기</a>
+					<span class="font_btn"><a href="">+</a></span>
+					<span class="font_btn"><a href="">-</a></span>
+				</li>
+				<li><a href="">마이페이지</a></li>
+			</ul>
+		</div>
+
+		<nav id="gnb_pc">
+			<h1 id="logo"><a href="index.html"><img src="img/logo_main.png" alt="로고"></a></h1>
+
+		 	<ul class="gnb_wrap">
+				<li><a href="">이해충돌방지 제도 안내</a>
+					<ul class="sub">
+						<li><a href="system.html">이해충돌방지 제도 안내</a></li>
+					</ul>
+		  		</li>
+
+		  		<li><a href="">사적 이해관계의 등록 / 변경 등록</a>
+					<ul class="sub">
+						<li><a href="">사적 이해관계의 등록</a></li>
+						<li><a href="">사적 이해관계의 변경 등록</a></li>
+					</ul>
+				</li>
+
+		 		<li><a href="">이해충돌의 신고</a>
+					<ul class="sub">
+						<li><a href="">이해충돌의 신고</a></li>
+						<li><a href="">직무관련자와의 거래 신고</a></li>
+						<li><a href="">퇴직자 사적 접촉 신고</a></li>
+					</ul>
+		 		</li>
+
+		 		<li><a href="">자료실</a>
+					<ul class="sub">
+						<li><a href="">공지사항</a></li>
+						<li><a href="">자료실</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul>
+		 		</li>		
+		 	</ul>
+
+			<div id="sub_bg"></div>
+		</nav>
+
+		
+		<nav id="gnb_mobile">
+		 <h1 id="logo_mobile"><a href=""><img src="img/logo_main.png" alt="로고"></a></h1>
+		 <button id="hammenu"><img src="img/ham_btn.png" alt="메뉴"></button>
+		
+		 <ul class="gnb_wrap">
+			<li><a href="">이해충돌방지 제도 안내</a>
+				<ul class="sub">
+					<li><a href="">이해충돌방지 제도 안내</a></li>
+				</ul>
+			</li>
+
+			<li><a href="">사적 이해관계의 등록 / 변경 등록</a>
+				<ul class="sub">
+					<li><a href="">사적 이해관계의 등록</a></li>
+					<li><a href="">사적 이해관계의 변경 등록</a></li>
+				</ul>
+			</li>
+
+			<li><a href="">이해충돌의 신고</a>
+				<ul class="sub">
+					<li><a href="">이해충돌의 신고</a></li>
+					<li><a href="">직무관련자와의 거래 신고</a></li>
+					<li><a href="">퇴직자 사적 접촉 신고</a></li>
+				</ul>
+			</li>
+
+			<li><a href="">자료실</a>
+				<ul class="sub">
+					<li><a href="">공지사항</a></li>
+					<li><a href="">자료실</a></li>
+					<li><a href="">FAQ</a></li>
+				</ul>
+			</li>
+		 </ul>
+		</nav>
+	</header>
+
+	<div id="quick_menu">
+		<ul>
+			<li><a href=""><img src="img/quick_icon01.png" alt="사적 이해관계의 등록 아이콘">사적 이해관계의<br>등록</a></li>
+			<li><a href=""><img src="img/quick_icon02.png" alt="사적 이해관계의 변경등록 아이콘">사적 이해관계의<br>변경등록</a></li>
+			<li><a href=""><img src="img/quick_icon03.png" alt="이해충돌의 신고 아이콘">이해충돌의<br>신고</a></li>
+			<li><a href=""><img src="img/quick_icon04.png" alt="직무관련자와의 거래 신고 아이콘">직무관련자와의<br>거래 신고</a></li>
+			<li><a href=""><img src="img/quick_icon05.png" alt="퇴직자 사적 접촉 신고 아이콘">퇴직자<br>사적 접촉 신고</a></li>
+			<li><a href=""><img src="img/quick_icon06.png" alt="마이페이지 아이콘">마이페이지</a></li>
+			<li><a href=""><img src="img/quick_icon07.png" alt="자료실 아이콘">자료실</a></li>
+			<li id="top_btn"><a href="">TOP</a></li>
+		</ul>
+	</div>
+
+	<section id="system">
+		<div id="system_title">
+			<h2>국회의원 이해충돌 방지 제도 안내</h2>
+		</div>
+
+		<div id="system_tab">
+			<ul>
+				<li><a href="#sys01">목적</a></li>
+				<li><a href="#sys02">근거</a></li>
+				<li><a href="#sys03">주요 내용</a></li>
+				<li><a href="#sys04">이해충돌 관련 의무 위반 시 제재</a></li>
+			</ul>
+		</div>
+
+		<article id="sys01">
+			<h2>Ⅰ. 목 적</h2>
+
+			<div class="sys_info">
+				<ul>
+					<li>
+						<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">
+						공직자의 부정한 사적이익 추구를 금지함으로써 공직자의 직무수행 중 발생할 수 있는 이해충돌을 방지하여 공정한 직무수행을 보장하고 공공기관에 대한 국민의 신뢰 확보
+					</li>
+				</ul>
+			</div>
+		</article>
+
+	
+
+		<article id="sys02">
+			<h2>Ⅱ. 근 거</h2>
+
+			<div class="sys_info">
+				<ul>
+					<li>
+						<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">기본적으로 국회의원(이하 ‘의원’)을 포함한 모든 공직자에 대해 일반법인 「공직자의 이해충돌 방지법」 적용, 다만, 사적이해 관계 등록, 이해충돌 신고·회피 및 관련 절차의 경우 의원에 대해서는 특별법인 「국회법」 적용
+						<ul class="highlight_wrap">
+							<li class="highlight">
+								* 「공직자의 이해충돌 방지법」 : 2021. 5. 18. 제정, 2022. 5. 19. 시행
+							</li>
+							<li class="highlight">
+								 * 「국회법」: 2021. 5. 18. 개정, 2022. 5. 30. 시행
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="table_wrap_pc">
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">
+									「공직자의 이해충돌 방지법」<br />
+									(일반법, 의원 및 직원 적용)
+								</th>
+								<th>
+									「국회법」<br />
+									(의원 관련 특별법, 의원 적용)
+								</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr class="row1">
+								<td colspan="2">
+									<span class="bold">민간부문 업무활동 내역 제출*</span><br />
+									(고위공직자)
+								</td>
+								<td>
+									<span class="bold">사적 이해관계 등록․변경등록</span><br />
+									(의원 본인, 배우자, 직계존비속)
+								</td>
+							</tr>
+
+							<tr class="row2">
+								<td colspan="2">
+									<span class="bold">이해충돌 신고 및 회피</span>(공직자 본인)<br />
+									신고·접수 등 관련 절차(이해충돌방지담당관)*
+								</td>
+								<td>
+									<span class="bold">이해충돌 신고 및 회피</span>(의원 본인)<br />
+									<span class="bold">신고·접수 등 관련 절차</span><br />
+									(윤리심사자문위원회)
+								</td>
+							</tr>
+
+							<tr class="row3">
+								<td>
+									① 공공기관 직무 관련 부동산 보유·매수 신고
+								</td>
+								<td>
+									② 직무관련자와의 거래 신고
+								</td>
+								<td rowspan="4">
+									<span class="bold">규정 없음</span><br />
+									(「공직자의 이해충돌방지법」적용)
+								</td>
+							</tr>
+
+							<tr class="row4">
+								<td>
+									③ 퇴직자 사적 접촉 신고
+								</td>
+								<td>
+									④ 직무관련 외부활동 제한
+								</td>
+							</tr>
+
+							<tr class="row5">
+								<td>
+									⑤ 가족 채용 제한
+								</td>
+								<td>
+									⑥ 수의계약 체결 제한
+								</td>
+							</tr>
+
+							<tr class="row6">
+								<td>
+									⑦ 공공기관 물품 등의 사적 사용·수익 금지
+								</td>
+								<td>
+									⑧ 직무상 비밀 이용 금지
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div>
+						<small class="note">*「국회법」적용</small>
+					</div>
+				</div>
+
+				<div class="table_wrap_mobile">
+					<table class="table_top">
+						<thead>
+							<tr>
+								<th colspan="2">
+									「공직자의 이해충돌 방지법」<br />
+									(일반법, 의원 및 직원 적용)
+								</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr class="row1">
+								<td colspan="2">
+									<span class="bold">민간부문 업무활동 내역 제출*</span><br />
+									(고위공직자)
+								</td>
+							</tr>
+
+							<tr class="row2">
+								<td colspan="2">
+									<span class="bold">이해충돌 신고 및 회피</span>(공직자 본인)<br />
+									신고·접수 등 관련 절차(이해충돌방지담당관)*
+								</td>
+							</tr>
+
+							<tr class="row3">
+								<td>
+									① 공공기관 직무 관련 부동산 보유·매수 신고
+								</td>
+								<td>
+									② 직무관련자와의 거래 신고
+								</td>
+							</tr>
+
+							<tr class="row4">
+								<td>
+									③ 퇴직자 사적 접촉 신고
+								</td>
+								<td>
+									④ 직무관련 외부활동 제한
+								</td>
+							</tr>
+
+							<tr class="row5">
+								<td>
+									⑤ 가족 채용 제한
+								</td>
+								<td>
+									⑥ 수의계약 체결 제한
+								</td>
+							</tr>
+
+							<tr class="row6">
+								<td>
+									⑦ 공공기관 물품 등의 사적 사용·수익 금지
+								</td>
+								<td>
+									⑧ 직무상 비밀 이용 금지
+								</td>
+							</tr>
+						</tbody>
+
+						<div>
+							<small class="note">*「국회법」적용</small>
+						</div>
+					</table>
+					
+
+					<table class="table_bttm">
+						<thead>
+							<tr>
+								<th>
+									「국회법」<br />
+									(의원 관련 특별법, 의원 적용)
+								</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr class="row1">
+								<td>
+									<span class="bold">사적 이해관계 등록․변경등록</span><br />
+									(의원 본인, 배우자, 직계존비속)
+								</td>
+							</tr>
+
+							<tr class="row2">
+								<td>
+									<span class="bold">이해충돌 신고 및 회피</span>(의원 본인)<br />
+									<span class="bold">신고·접수 등 관련 절차</span><br />
+									(윤리심사자문위원회)
+								</td>
+							</tr>
+
+							<tr class="row3">
+								<td rowspan="4">
+									<span class="bold">규정 없음</span><br />
+									(「공직자의 이해충돌방지법」적용)
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</article>
+
+
+
+		<article id="sys03">
+			<h2>Ⅲ. 주요 내용 </h2>
+
+			<div class="sys_info sys03_01">
+					<h3>
+						<p class="sub_num">1</p>
+						사적 이해관계 등록 <small>(「국회법」 제32조의2제1항)</small>
+					</h3>
+
+					<ul>
+						<li>
+							<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">의원은 본인, 배우자 또는 직계존비속의 직업, 재산 등 사적 이해관계를 파악할 수 있는 정보를 윤리심사자문위원회(이하 ‘자문위’)에 등록
+						</li>
+					</ul>
+
+					<div class="table_wrap_pc">
+						<table>
+							<thead>
+								<tr>
+									<th>
+										대상자
+									</th>
+									<th>
+										등록사항
+									</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr class="row1">
+									<td>
+										<span class="bold">의원 본인</span><br />
+										(과거 내역)
+									</td>
+									<td>
+										<ul>
+											<li>
+												∘ 당선 전 3년 이내 재직하였던 법인·단체의 명단 및 그 업무내용
+											</li>
+											<li>
+												∘ 당선 전 3년 이내 대리하거나 고문·자문 등을 제공하였던 개인이나 법인·단체의 명단 및 그 업무내용
+											</li>
+											<li>
+												∘ 당선 전 3년 이내 민간부문에서 관리·운영하였던 사업 또는 영리행위의 내용
+											</li>
+										</ul>
+										
+									</td>
+								</tr>
+
+								<tr class="row2">
+									<td>
+										<span class="bold">
+											의원 본인,<br />
+											배우자,<br />
+											직계존비속</span><br />
+										(현재 내역)
+									</td>
+									<td>
+										<ul>
+											<li>
+												∘ 임원·대표자·관리자·사외이사인 법인·단체의 명단 및 그 업무내용
+											</li>
+											<li>
+												∘ 대리, 고문·자문을 제공하는 개인이나 법인·단체의 명단 및 그 업무내용
+											</li>
+											<li>
+												∘ 국회규칙으로 정하는 비율 또는 금액 이상의 주식·지분 또는 자본금 등을 소유하고 있는 법인·단체의 명단
+											</li>
+											<li>
+												∘ 소유하고 있는 다음의 재산(소유 명의와 관계없이 사실상 소유하는 재산, 비영리 법인에 출연한 재산과 외국에 있는 재산을 포함)
+													<ul>
+														<li>
+															- 부동산에 관한 소유권·지상권 및 전세권
+														</li>
+														<li>
+															- 광업권·어업권·양식업권, 그 밖에 부동산에 관한 규정이 준용되는 권리
+														</li>
+													</ul>
+											</li>
+										</ul>
+										
+									</td>
+								</tr>
+								<tr class="row3">
+									<td>
+										기타
+									</td>
+									<td>
+										<ul>
+											<li>
+												∘ 그 밖에 의원의 사적 이해관계와 관련되는 사항으로서 국회규칙으로 정하는 재산사항
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="table_wrap_mobile">
+						<table class="table01">
+							<p>
+								<img src="img/list_dot.png" alt="리스트 아이콘">
+								대상자: <span class="bold">의원 본인</span>
+								(과거 내역)
+							</p>
+
+							<thead>
+								<tr>
+									<th>
+										등록사항
+									</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>
+										<ul>
+											<li>
+												∘ 당선 전 3년 이내 재직하였던 법인·단체의 명단 및 그 업무내용
+											</li>
+											<li>
+												∘ 당선 전 3년 이내 대리하거나 고문·자문 등을 제공하였던 개인이나 법인·단체의 명단 및 그 업무내용
+											</li>
+											<li>
+												∘ 당선 전 3년 이내 민간부문에서 관리·운영하였던 사업 또는 영리행위의 내용
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table02">
+							<p>
+								<img src="img/list_dot.png" alt="리스트 아이콘">
+								대상자: <span class="bold">의원 본인,
+									배우자,
+									직계존비속</span>
+								(현재 내역)
+							</p>
+							
+							<thead>
+								<tr>
+									<th>
+										등록사항
+									</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>
+										<ul>
+											<li>
+												∘ 임원·대표자·관리자·사외이사인 법인·단체의 명단 및 그 업무내용
+											</li>
+											<li>
+												∘ 대리, 고문·자문을 제공하는 개인이나 법인·단체의 명단 및 그 업무내용
+											</li>
+											<li>
+												∘ 국회규칙으로 정하는 비율 또는 금액 이상의 주식·지분 또는 자본금 등을 소유하고 있는 법인·단체의 명단
+											</li>
+											<li>
+												∘ 소유하고 있는 다음의 재산(소유 명의와 관계없이 사실상 소유하는 재산, 비영리 법인에 출연한 재산과 외국에 있는 재산을 포함)
+													<ul>
+														<li>
+															- 부동산에 관한 소유권·지상권 및 전세권
+														</li>
+														<li>
+															- 광업권·어업권·양식업권, 그 밖에 부동산에 관한 규정이 준용되는 권리
+														</li>
+													</ul>
+											</li>
+										</ul>
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table class="table03">
+							<p>
+								<img src="img/list_dot.png" alt="리스트 아이콘">
+								기타
+							</p>
+
+							<thead>
+								<tr>
+									<th>
+										등록사항
+									</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>
+										<ul>
+											<li>
+												∘ 그 밖에 의원의 사적 이해관계와 관련되는 사항으로서 국회규칙으로 정하는 재산사항
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<ul>
+						<li>
+							<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">등록사항은 자문위의 검토를 거쳐 의장 및 교섭단체대표의원의 위원회 위원 선임 과정에
+							활용					  
+						</li>
+					</ul>
+
+					<div class="box_wrap">
+						<div class="box box1">
+							<p><span class="bold">
+								① 사적 이해관계 등록</span><br />
+								(국회의원)</p>
+							<ul>
+								<li>본인, 배우자, 직계존비속의 사적 이해관계 등록</li>
+							</ul>
+						</div>
+		
+						<div class="box box2">
+							<p><span class="bold">② 검토·의견</span><br />
+								(윤리심사자문위원회)</p>
+							<ul>
+								<li>등록사항 검토 후 이해충돌 여부 의견 제출</li>
+							</ul>
+						</div>
+		
+						<div class="box box3">
+							<p><span class="bold">③ 위원 선임·선임요청</span><br />
+								(의장·교섭단체대표의원)</p>
+							<ul>
+								<li>자문위 의견 고려하여 위원 선임·선임 요청</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+
+				
+			<div class="sys_info sys03_02">
+				<h3>
+					<p class="sub_num">2</p>
+					사적 이해관계 변경등록 <small>(「국회법」 제32조의2제2항)</small>
+				</h3>
+
+				<ul>
+					<li>
+						<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">의원은 사적이해관계 등록사항에 대하여 국회규칙으로 정하는 변경사항 발생 시 자문위에 사적이해관계 변경등록
+					</li>
+					<li>
+						<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">자문위는 변경등록된 사항에 대한 의견을 제출하고, 의장 및 교섭단체대표의원은 자문위 의견을 고려하여 위원회 위원을 개선 또는 개선 요청 <small>(「국회법」제48조의2제3항)</small>
+					</li>
+				</ul>
+
+				<div class="box_wrap">
+					<div class="box box1">
+						<p><span class="bold">
+							① 변경등록</span><br />
+							(국회의원)</p>
+						<ul>
+							<li>변경 발생일부터 10일 이내 변경등록</li>
+						</ul>
+					</div>
+	
+					<div class="box box2">
+						<p><span class="bold">② 검토·의견</span><br />
+							(윤리심사자문위원회)</p>
+						<ul>
+							<li>변경 등록일부터 10일 
+								이내 의견 제출</li>
+						</ul>
+					</div>
+	
+					<div class="box box3">
+						<p><span class="bold">③ 위원 개선·개선요청</span><br />
+							(의장·교섭단체대표의원)</p>
+						<ul>
+							<li>공정 기할 수 없는 경우 
+								위원개선·개선 요청</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="sys_info sys03_03">
+				<h3>
+					<p class="sub_num">3</p>
+					이해충돌의 신고·회피 <small>(「국회법」 제32조의4 및 제32조의5)</small>
+				</h3>
+
+				<ul>
+					<li>
+						<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">의원은 소속 위원회의 안건 심사, 국정감사 또는 국정조사와 관련해 사적 이해관계자*가 직접적인 이익 또는 불이익을 받게 되는 것을 안 날부터 10일 이내에 자문위에 신고
+					</li>
+				</ul>
+
+
+				<div class="box_wrap1">
+					<div class="box box1">
+						<p><span class="bold">
+							① 이해충돌 신고</span><br />
+							(국회의원)</p>
+						<ul>
+							<li>안건 심사 등과 관련 직접적인 
+								이익·불이익 발생을 안 경우</li>
+						</ul>
+					</div>
+	
+					<div class="box box2">
+						<p><span class="bold">② 검토 의견</span><br />
+							(윤리심사자문위원회)</p>
+						<ul>
+							<li>이해충돌 발생 우려가 있는 
+								경우 의견 제출</li>
+						</ul>
+					</div>
+	
+					<div class="box box3">
+						<p><span class="bold">③ 위원 개선·개선요청</span><br />
+							(의장·교섭단체대표의원)</p>
+						<ul>
+							<li>공정 기할 수 없는 경우 
+								위원개선·개선요청</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="table_wrap_pc">
+					<table>
+						<tbody>
+							<tr class="row1">
+								<td rowspan="2">
+									<span class="bold">사적이해관계자</span><br />
+									<small>(「국회법」제32조의4제1항 각 호)</small>
+								</td>
+								<td>
+									<ul>
+										<li>
+											∙ 의원 본인 또는 그 가족(「민법」제779조에 따른 가족*을 말한다. 이하 같다)
+										</li>
+										<li>
+											∙ 의원 본인 또는 그 가족이 임원ㆍ대표자ㆍ관리자 또는 사외이사로 재직하고 있는 법인ㆍ단체
+										</li>
+										<li>
+											∙ 의원 본인 또는 그 가족이 대리하거나 고문ㆍ자문 등을 제공하는 개인이나   법인ㆍ단체
+										</li>
+										<li>
+											∙ 의원 임기 개시 전 2년 이내에 의원 본인이 대리하거나 고문ㆍ자문 등을 제공하였던 개인이나 법인ㆍ단체
+										</li>
+										<li>
+											∙ 의원 본인 또는 그 가족이 국회규칙으로 정하는 일정 비율 이상의 주식ㆍ지분 또는 자본금 등을 소유하고 있는 법인ㆍ단체
+
+										</li>
+										<li>
+											∙ 최근 2년 이내에 퇴직한 공직자로서 퇴직일 전 2년 이내에 위원회의 안건 심사, 국정감사 또는 국정조사를 수행하는 의원과 국회규칙으로 정하는 범위의 부서에서 같이 근무하였던 사람
+										</li>
+										<li>
+											∙ 그 밖에 의원의 사적 이해관계와 관련되는 자로서 국회규칙으로 정하는 자
+										</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr class="row2">
+								<td>
+									<ul>
+										<li>
+											* 「민법」 제779조에 따른 가족
+											<ul>
+												<li>- 배우자, 직계혈족 및 형제자매 </li>
+												<li>- 직계혈족의 배우자, 배우자의 직계혈족 및 배우자의 형제자매(생계를 같이 하는 경우)</li>
+											</ul>
+										</li>
+									</ul>
+									
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="table_wrap_mobile">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									<span class="bold">사적이해관계자</span><br />
+									<small>(「국회법」제32조의4제1항 각 호)</small>
+								</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr class="row1">
+								<td>
+									<ul>
+										<li>
+											∙ 의원 본인 또는 그 가족(「민법」제779조에 따른 가족*을 말한다. 이하 같다)
+										</li>
+										<li>
+											∙ 의원 본인 또는 그 가족이 임원ㆍ대표자ㆍ관리자 또는 사외이사로 재직하고 있는 법인ㆍ단체
+										</li>
+										<li>
+											∙ 의원 본인 또는 그 가족이 대리하거나 고문ㆍ자문 등을 제공하는 개인이나   법인ㆍ단체
+										</li>
+										<li>
+											∙ 의원 임기 개시 전 2년 이내에 의원 본인이 대리하거나 고문ㆍ자문 등을 제공하였던 개인이나 법인ㆍ단체
+										</li>
+										<li>
+											∙ 의원 본인 또는 그 가족이 국회규칙으로 정하는 일정 비율 이상의 주식ㆍ지분 또는 자본금 등을 소유하고 있는 법인ㆍ단체
+
+										</li>
+										<li>
+											∙ 최근 2년 이내에 퇴직한 공직자로서 퇴직일 전 2년 이내에 위원회의 안건 심사, 국정감사 또는 국정조사를 수행하는 의원과 국회규칙으로 정하는 범위의 부서에서 같이 근무하였던 사람
+										</li>
+										<li>
+											∙ 그 밖에 의원의 사적 이해관계와 관련되는 자로서 국회규칙으로 정하는 자
+										</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr class="row2">
+								<td>
+									<ul>
+										<li>
+											* 「민법」 제779조에 따른 가족
+											<ul>
+												<li>- 배우자, 직계혈족 및 형제자매 </li>
+												<li>- 직계혈족의 배우자, 배우자의 직계혈족 및 배우자의 형제자매(생계를 같이 하는 경우)</li>
+											</ul>
+										</li>
+									</ul>
+									
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+				<ul>
+					<li>
+						<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">의원은 신고사항에 해당하여 이해충돌이 발생할 우려가 있다고 판단하는 경우 위원장에게 표결 및 발언의 회피를 신청
+					</li>
+				</ul>
+
+
+				<div class="box_wrap2">
+					<div class="box box1">
+						<p><span class="bold">
+							① 회피 신청</span><br />
+							(국회의원)</p>
+						<ul>
+							<li>이해충돌 발생 우려 시 
+								표결·발언 회피 신청</li>
+						</ul>
+					</div>
+	
+					<div class="box box2">
+						<p><span class="bold">② 회피 허가</span><br />
+							(소속 위원장)</p>
+						<ul>
+							<li>간사 협의 후 회피 허가</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="sys_info sys03_04">
+				<h3>
+					<p class="sub_num">4</p>
+					직무관련자와의 거래 신고 <small>(「공직자의 이해충돌 방지법」 제9조)</small>
+				</h3>
+
+				<ul>
+					<li>
+						<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">공직자는 본인·배우자·직계존비속(배우자의 직계존비속으로 생계를 같이하는 경우 포함)이 공직자 자신의 직무관련자와 금전, 유가증권, 부동산 거래 등을 하는 것을 안 경우 14일이내 소속기관장에게 신고
+					</li>
+				</ul>
+
+				<div class="sys_info sys03_05">
+					<h3>
+						<p class="sub_num">5</p>
+						퇴직자 사적 접촉 신고 <small>(「공직자의 이해충돌 방지법」 제15조)</small>
+					</h3>
+
+					<ul>
+						<li>
+							<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">공직자는 직무관련자인 소속 기관 퇴직자와 골프, 여행, 사행성 오락 등의 사적 접촉을 하는 경우 소속기관장에게 신고 (사회상규상 허용되는 경우 제외)
+						</li>
+					</ul>
+				</div>
+
+				<div class="sys_info sys03_06">
+					<h3>
+						<p class="sub_num">6</p>
+						기타 제한·금지사항 <small>(「공직자의 이해충돌 방지법」 제10조부터 제14조까지 등)</small>
+					</h3>
+
+					<ul>
+						<li>
+							<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">직무관련 외부활동 제한, 가족 채용 제한, 수의계약 체결 제한, 공공기관 물품 등의 사적 사용·수익 금지, 직무상 비밀 이용 금지 등 
+						</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+
+
+
+		<article id="sys04">
+			<h2>Ⅳ. 이해충돌 관련 의무 위반 시 제재</h2>
+
+			<div class="sys_info">
+				<ul>
+					<li>
+						<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">의원이 사적 이해관계 등록·변경등록을 하지 아니하거나 등록사항을 고의로 누락·허위로 제출할 경우 또는 이해충돌의 신고·회피 의무를 위반할 경우 의원 징계 사유에 해당 <small>(「국회법」 제155조)</small>
+					</li>
+					<li>
+						<img src="img/list_system.png" alt="리스트 아이콘" class="sub_list">「공직자의 이해충돌 방지법」 상 관련 의무 위반 시 벌칙 및 과태료 적용 <small>(공직자의 이해충돌방지법」 제27조 및 제28조)</small>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</section>
+
+
+
+	<footer>
+		<div id="footer_wrap">
+			<h1 id="footer_logo"><a href=""><img src="img/logo_footer.png" alt="로고"></a></h1>
+			<ul>
+				<li>서울특별시 영등포구 의사당대로 1(여의도동) 07233</li>
+				<li>|</li>
+				<li>TEL 02-6788-3844</li>
+			</ul>
+			<small>Copyright © 대한민국국회. All rights reserved.</small>
+
+			<div id="link_wrap">
+				<select name="관련사이트 바로가기" title="관련사이트 바로가기">
+					<option value="">관련사이트 바로가기</option>
+					<option value=""><a href="https://www.assembly.go.kr">대한민국 국회</a></option>
+					<option value=""><a href="https://open.assembly.go.kr">열린국회정보</a></option>
+					<option value=""><a href="https://committee.na.go.kr:444/portal/index.do">위원회</a></option>
+					<option value=""><a href="http://nrm.assembly.go.kr/">국회의원정보시스템</a></option>
+					<option value=""><a href="http://docs.assembly.go.kr">전자문서시스템</a></option>
+				</select>
+			</div>
+		</div>
+	</footer>
+ </body>
+ 
+</html>
